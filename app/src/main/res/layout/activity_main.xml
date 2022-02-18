@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/insert_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insert_title"
+        android:layout_marginTop="15dp"
+        android:text="COMMENT TEXT"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create comment" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="5dp"
+        android:text="COMMENT TITLE"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/insert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/createComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insert_body"
+        android:layout_marginTop="10dp"
+        android:text="create" />
+
+    <Button
+        android:id="@+id/styleRow"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/createComment"
+        android:layout_marginTop="2dp"
+        android:clickable="false" />
+
+    <Spinner
+        android:id="@+id/selectComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/styleRow"
+        android:layout_marginTop="10dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/selectedTitle"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@+id/selectComment"
+        android:layout_marginTop="14dp"
+        android:text="title"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/selectdBody"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_below="@+id/selectedTitle"
+        android:layout_marginTop="17dp"
+        android:text="TextView" />
+</RelativeLayout>
